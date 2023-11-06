@@ -1,0 +1,376 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 10%;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+header > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+header > div:first-child h3 {
+    font-family: 'Clash Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+header nav ul li {
+    list-style: none;
+    display: inline-block;
+    align-items: center;
+    font-size: 1.125rem;
+}
+header nav ul li .blog {
+    border-bottom: 1px solid #FFA800;
+}
+
+header > div:last-child {
+    display: none;
+}
+
+/* hero page  */
+.hero .desktop-img {
+    height: 642px;
+    background-image: url(./images/Hero-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.hero .mobile-img {
+    display: none;
+}
+
+.hero div > div {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    /* margin-right: 49%; */
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.hero div > div h2 {
+    font-family: 'Clash Grotesk', sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+}
+.hero div > div button {
+    padding: 14.5px 24px;    /* padding: 3% 7%; */
+    border-radius: 8px;
+    background: #FFBF23;
+    border: none;
+    font-family: Proxima Nova;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+}
+
+/* featured page */
+.featured {
+    padding: 3% 10% 0;
+}
+.featured > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+.featured > div:first-child h3 {
+    color: #000;
+    font-family: 'Clash Grotesk', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.featured > div:first-child > div {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 4%;
+}
+.featured > div:first-child > div a {
+    padding: 14.5px 24px;    /* padding: 3% 7%; */
+    font-family: Proxima Nova;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+.featured > div:first-child > div a:first-child {
+    background-color: #FFBF23;
+    border-radius: 8px;
+}
+
+/* boxes */
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 64px 32px; /* gap: 9% 0; */
+}
+.box {
+    width: 100%;
+}
+.box img {
+    width: 100%;
+}
+.box .small{
+    padding: 6% 0;
+    font-size: 0.75rem;
+}
+.box h3 {
+    color: #313131;
+    font-family: 'Clash Grotesk', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 6%;
+}
+.box p:last-child {
+    color: #464E5F;
+    font-family: Proxima Nova;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+/* home */
+.home {
+    margin: 104px 0;
+}
+.home img {
+    width: 100%;
+}
+
+/* middle */
+.middle {
+    margin-bottom: 90px;
+}
+hr {
+    border: 1px solid #000000;
+    position: relative;
+    top: 30px;
+    z-index: 1;
+}
+.middle div {
+    position: absolute;
+    left: 47.5%;
+    z-index: 2;
+}
+
+/* more */
+.more h2{
+    color: #313131;
+    font-family: 'Clash Grotesk', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 3%;
+}
+.more .cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 40px;
+    margin-bottom: 10%;
+}
+.more .cards img {
+    width: 100%;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1E1E1E;
+    padding: 3% 5% 3% 10%;
+    color: #FFF;
+    font-family: 'Clash Grotesk', sans-serif;
+    font-weight: 500;
+}
+footer .left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.left h3 {
+    font-size: 2rem;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+}
+.right p {
+    font-family: 'Clash Grotesk', sans-serif;
+    font-size: 1.5rem;
+}
+.icons {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+
+@media screen and (max-width: 905px) {
+    header {
+        padding: 1% 5%;
+        /* border: 1px solid red; */
+    }
+    header > div:first-child {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    header > div:first-child div {
+        width: 30%;   /* width: 32px; */
+    }
+    header > div:first-child div img {
+        width: 100%;
+    }
+    header > div:first-child h3 {
+        font-size: 1.125rem;
+    }
+    header nav ul {
+        display: none;
+    }
+    header > div:last-child {
+        display: revert;
+    }
+
+    /* hero page  */
+.hero .desktop-img {
+    display: none;
+}
+.hero .mobile-img {
+    display: revert;
+    height: 359px;
+    background-image: url(./images/Hero-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.hero div > div {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 40px; */
+    /* margin-right: 2%; */ /* resize */
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    margin: 0 3%;
+}
+.hero div > div h2 {
+    font-size: 3rem;    
+}
+.hero div > div button {
+    width: 100%;
+}
+
+/* featured page */
+.featured {
+    padding: 5% 5% 0;
+}
+.featured > div:first-child h3 {
+    font-size: 1.5rem;
+}
+
+.featured > div:first-child > div {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 4%;
+}
+.featured > div:first-child > div a {
+    padding: 3% 9%;
+}
+
+/* boxes */
+.boxes {
+    grid-template-columns: 1fr;
+    gap: 40px 0; 
+}
+
+/* home */
+.home {
+    margin: 40px 0;
+}
+
+/* middle */
+hr {
+    top: 30px;
+    z-index: 1;
+}
+.middle div {
+    width: 10%;  
+    position: absolute;
+    left: 47.5%;
+    z-index: 2;
+}
+.middle div img {
+    width: 100%;
+}
+
+/* more */
+.more h2{
+    font-size: 2rem;
+}
+.more .cards {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 40px;
+}
+
+/* footer */
+footer {
+    justify-content: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 3% 5% 3% 10%;
+    padding: 32px 20px;
+}
+
+footer .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+footer .left > div{
+    width: 20%;   /* width: 32px; */
+}
+footer .left div img {
+    width: 100%;
+}
+
+.left h3 {
+    font-size: 1rem;
+}
+.right {
+    gap: 16px;
+}
+.right p {
+    font-size: 0.75rem;
+}
+.icons {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+
+
+}
