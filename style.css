@@ -10,42 +10,39 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
-    padding: 1.5rem 7.5rem ;
-    color: #000;
-    margin-bottom: 5.2rem;
-    line-height: normal; 
+    align-items: center;
+    padding: 2% 10%; /* padding: 24px 120px; */
 }
+
 .logo {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 24px;
 }
-.logo > span {
+.logo h3 {
     font-size: 2rem;
-    /* font-family: Clash Grotesk; */
-    /* font-style: normal; */
-    /* font-weight: 500; */
-}
-.logo .menu {
-    display: none;
-}
-nav {
-    display: flex;
+    font-family: 'Clash Grotesk', sans-serif;
+    font-weight: 500;
 }
 nav ul li {
-    list-style-type: none;
+    list-style: none;
     display: inline-block;
     align-items: center;
-    padding-right: 1.25rem;
-    font-size: 1.12rem;
-    /* font-family: Proxima Nova; */
-    font-weight: 400;
-    line-height: normal;
+    padding-right: 20px;
+    font-size: 1.125rem;
 }
 nav ul li:last-child {
     padding-right: 0;
-    color: #FFA800;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.blog {
+    border-bottom: 1px solid #FFA800;
+}
+header > img {
+    display: none;
 }
 
 /* Section-1 */
